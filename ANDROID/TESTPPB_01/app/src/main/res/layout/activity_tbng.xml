@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/graygrad"
+    tools:context=".TbngActivity">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gmbr1">
+
+        <TextView
+            android:id="@+id/jdl4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Tabung"
+            android:textSize="40sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/grad"
+        >
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/brdr">
+
+        <EditText
+            android:id="@+id/te2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jdl4"
+            android:autofillHints=""
+            android:gravity="center_horizontal"
+            android:hint="Masukkan jari-jari"
+            android:inputType="number"
+            tools:ignore="MissingConstraints, UnusedAttribute, TouchTargetSizeCheck"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/grad" >
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/brdr" >
+
+        <EditText
+            android:id="@+id/te3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/te2"
+            android:autofillHints=""
+            android:gravity="center_horizontal"
+            android:hint="Masukkan tinggi"
+            android:inputType="number"
+            tools:ignore="MissingConstraints, UnusedAttribute, TouchTargetSizeCheck"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hsl"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/kelit"
+        android:layout_below="@id/hsl"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Keliling"
+        tools:ignore="MissingConstraints"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <Button
+        android:id="@+id/htng"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        android:layout_below="@id/kelit"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

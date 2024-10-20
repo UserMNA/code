@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/graygrad"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gmbr1">
+
+        <TextView
+            android:id="@+id/jdl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Menghitung"
+            android:textSize="40sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/PP"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:text="Persegi Panjang"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/jdl"/>
+
+    <Button
+        android:id="@+id/LNG"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:text="Lingkaran"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/PP"/>
+
+    <Button
+        android:id="@+id/TBNG"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:text="Tabung"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/LNG"/>
+
+    <Button
+        android:id="@+id/GJGN"
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:text="Ganjil dan Genap"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/jdl"/>
+
+</LinearLayout>

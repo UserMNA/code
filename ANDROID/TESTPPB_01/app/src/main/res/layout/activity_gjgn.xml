@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/graygrad"
+    tools:context=".GjgnActivity">
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/gmbr1">
+
+        <TextView
+            android:id="@+id/jdl3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="Ganjil dan Genap"
+            android:textSize="40sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/grad"
+        >
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/brdr">
+
+        <EditText
+            android:id="@+id/be"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jdl3"
+            android:autofillHints=""
+            android:gravity="center_horizontal"
+            android:hint="Masukkan bilangan"
+            android:inputType="number"
+            tools:ignore="MissingConstraints, UnusedAttribute, TouchTargetSizeCheck"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="93dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bil"
+        android:layout_below="@id/bil"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Bilangan"
+        tools:ignore="MissingConstraints"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_below="@id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Hasil"
+        tools:ignore="MissingConstraints"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+
+    <Button
+        android:id="@+id/tnt"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Tentukan"
+        android:textColor="@color/white"
+        android:layout_below="@id/bil"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

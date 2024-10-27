@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/jdl1"
+        android:layout_below="@id/num2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Tes Kalkulator"
+        tools:ignore="MissingConstraints"
+        android:gravity="center_horizontal"
+        android:textSize="35sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brdr"
+        >
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:gravity="center_horizontal"
+            android:hint="Masukkan Angka 1"
+            android:inputType="number"
+            tools:ignore="MissingConstraints, UnusedAttribute, TextContranstCheck"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="34dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ksng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/num1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/brdr"
+        >
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ksng"
+            android:autofillHints=""
+            android:gravity="center_horizontal"
+            android:hint="Masukkan Angka 2"
+            android:inputType="number"
+            tools:ignore="MissingConstraints, UnusedAttribute, TouchTargetSizeCheck"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="93dp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sm"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:textSize="40sp"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/sm"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        tools:ignore="MissingConstraints"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:background="#8e8e8e"
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Tambah"
+        android:layout_below="@id/result"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="190dp"
+        />
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Kurang"
+        android:layout_below="@id/result"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:background="@color/black"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-90dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="190dp"
+        />
+
+    <Button
+        android:id="@+id/add3"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Kali"
+        android:layout_below="@id/add"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="190dp"
+        />
+
+    <Button
+        android:id="@+id/add4"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Bagi"
+        android:layout_below="@id/add2"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:background="@color/black"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="-90dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="190dp"
+        />
+
+    <Button
+        android:id="@+id/persen"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="Persen"
+        android:layout_below="@id/add4"
+        tools:ignore="MissingConstraints, VisualLintButtonSize"
+        android:textSize="25sp"
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="190dp"
+        />
+
+</LinearLayout>
